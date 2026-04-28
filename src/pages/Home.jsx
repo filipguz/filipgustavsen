@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageContainer from '../components/PageContainer'
+import IntersectionScene from '../components/IntersectionScene'
 import { useLanguage } from '../context/LanguageContext'
 import { t } from '../translations'
 
@@ -9,36 +10,55 @@ export default function Home() {
 
   return (
     <PageContainer>
-      <div className="pt-8 pb-4 flex flex-col sm:flex-row sm:items-start gap-8">
-        <img
-          src="/profil.jpg"
-          alt="Filip Gustavsen"
-          className="w-28 h-28 rounded-full object-cover shrink-0 bg-gray-100"
-        />
+      <div className="pt-8 pb-4">
 
-        <div>
-          <h1 className="text-4xl font-semibold text-gray-900 tracking-tight mb-4">
-            Filip Gustavsen
-          </h1>
-          <p className="text-lg text-gray-600 max-w-lg leading-relaxed mb-10">
-            {txt.intro}
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Link
-              to="/tech"
-              className="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors"
-            >
-              {txt.techBtn}
-            </Link>
-            <Link
-              to="/people"
-              className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
-            >
-              {txt.peopleBtn}
-            </Link>
+        {/* Hero */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-8">
+          <img
+            src="/profil.jpg"
+            alt="Filip Gustavsen"
+            className="w-24 h-24 rounded-full object-cover shrink-0 bg-gray-100"
+          />
+          <div>
+            <h1 className="text-4xl font-semibold text-gray-900 tracking-tight mb-2">
+              Filip Gustavsen
+            </h1>
+            <p className="text-base text-gray-600 leading-relaxed max-w-lg">
+              {txt.intro}
+            </p>
           </div>
         </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+          <Link
+            to="/tech"
+            className="group border border-gray-200 rounded-lg p-5 hover:border-gray-400 transition-colors"
+          >
+            <div className="flex items-start justify-between">
+              <span className="text-sm font-semibold text-gray-900">{txt.techBtn}</span>
+              <span className="text-gray-400 group-hover:text-gray-900 transition-colors">→</span>
+            </div>
+            <p className="text-sm text-gray-500 mt-1">{txt.techSub}</p>
+          </Link>
+
+          <Link
+            to="/people"
+            className="group border border-gray-200 rounded-lg p-5 hover:border-gray-400 transition-colors"
+          >
+            <div className="flex items-start justify-between">
+              <span className="text-sm font-semibold text-gray-900">{txt.peopleBtn}</span>
+              <span className="text-gray-400 group-hover:text-gray-900 transition-colors">→</span>
+            </div>
+            <p className="text-sm text-gray-500 mt-1">{txt.peopleSub}</p>
+          </Link>
+        </div>
+
+        {/* Decorative illustration */}
+        <div className="flex justify-center">
+          <IntersectionScene className="w-36 text-gray-200" />
+        </div>
+
       </div>
     </PageContainer>
   )

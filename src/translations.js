@@ -4,7 +4,9 @@ export const t = {
     home: {
       intro: 'Utvikler og friluftsinstruktør med erfaring fra både programvareutvikling og arbeid med mennesker.',
       techBtn: 'Teknologi / Utvikling',
+      techSub: 'Prosjekter, stack og SaaS-erfaring',
       peopleBtn: 'Mennesker / Utdanning',
+      peopleSub: 'Friluftsliv, folkehelse og instruksjon',
     },
     about: {
       title: 'Om meg',
@@ -72,7 +74,9 @@ export const t = {
     home: {
       intro: 'Developer and outdoor instructor with experience in both building software and working with people.',
       techBtn: 'Tech / Development',
+      techSub: 'Projects, stack and SaaS experience',
       peopleBtn: 'People / Education',
+      peopleSub: 'Outdoor life, public health and instruction',
     },
     about: {
       title: 'About me',
