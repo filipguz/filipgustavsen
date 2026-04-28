@@ -11,7 +11,7 @@ export default function Footer() {
         <span className="text-sm text-gray-400">Filip Gustavsen</span>
         <div className="flex gap-6">
           <a
-            href="mailto:filip@gustavsenfriluft.no"
+            href="mailto:hei@filipgustavsen.no"
             className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
           >
             {txt.email}
