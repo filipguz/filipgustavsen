@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#111827"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="5" fill="#111827"/>
   <!-- F -->
-  <rect x="4.5" y="7" width="2.5" height="18" rx="1" fill="white"/>
-  <rect x="4.5" y="7" width="10" height="2.5" rx="1" fill="white"/>
-  <rect x="4.5" y="14.5" width="7.5" height="2.5" rx="1" fill="white"/>
+  <rect x="3.5" y="7" width="3" height="18" fill="white"/>
+  <rect x="3.5" y="7" width="10" height="3" fill="white"/>
+  <rect x="3.5" y="14" width="8" height="2.5" fill="white"/>
   <!-- G -->
-  <path d="M27,11 C25.5,8.5 23.5,7.5 21,7.5 C17,7.5 15,10.5 15,16 C15,21.5 17,24.5 21,24.5 C23.5,24.5 25.5,23 27,21 L27,17 L21.5,17" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="16" y="7" width="3" height="18" fill="white"/>
+  <rect x="16" y="7" width="12.5" height="3" fill="white"/>
+  <rect x="16" y="22" width="12.5" height="3" fill="white"/>
+  <rect x="25.5" y="7" width="3" height="7" fill="white"/>
+  <rect x="21" y="15" width="7.5" height="2.5" fill="white"/>
 </svg>
