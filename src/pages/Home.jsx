@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
 import PageContainer from '../components/PageContainer'
+import { useLanguage } from '../context/LanguageContext'
+import { t } from '../translations'
 
 export default function Home() {
+  const { lang } = useLanguage()
+  const txt = t[lang].home
+
   return (
     <PageContainer>
       <div className="pt-8 pb-4 flex flex-col sm:flex-row sm:items-start gap-8">
@@ -16,8 +21,7 @@ export default function Home() {
             Filip Gustavsen
           </h1>
           <p className="text-lg text-gray-600 max-w-lg leading-relaxed mb-10">
-            Developer and outdoor instructor with experience in both building
-            software and working with people.
+            {txt.intro}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -25,13 +29,13 @@ export default function Home() {
               to="/tech"
               className="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors"
             >
-              Tech / Development
+              {txt.techBtn}
             </Link>
             <Link
               to="/people"
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-gray-400 hover:text-gray-900 transition-colors"
             >
-              People / Education
+              {txt.peopleBtn}
             </Link>
           </div>
         </div>

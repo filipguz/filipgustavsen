@@ -1,26 +1,8 @@
 import PageContainer from '../components/PageContainer'
 import Section from '../components/Section'
-
-const experience = [
-  { role: 'Leirskolelærer', note: 'Outdoor education at school camps' },
-  { role: 'Friluftspedagog', note: 'Outdoor activity pedagogue' },
-  { role: 'Vaktleder', note: 'Shift supervisor, Aquarama' },
-  { role: 'Hovedtillitsvalgt', note: 'Main union representative' },
-]
-
-const education = [
-  { title: 'Bachelor i folkehelse', institution: '' },
-  { title: 'Friluftsliv og uterehabilitering', institution: '' },
-  { title: 'Ledelse og selvledelse', institution: 'Kristiania' },
-]
-
-const skills = [
-  'Communication',
-  'Leadership',
-  'Safety & First Aid',
-  'Public Health',
-  'Group facilitation',
-]
+import OutdoorScene from '../components/OutdoorScene'
+import { useLanguage } from '../context/LanguageContext'
+import { t } from '../translations'
 
 const photos = [
   { src: '/surfing.jpg', alt: 'Surfing' },
@@ -29,17 +11,21 @@ const photos = [
 ]
 
 export default function People() {
+  const { lang } = useLanguage()
+  const txt = t[lang].people
+
   return (
     <PageContainer>
-      <div className="mb-10">
-        <h1 className="text-3xl font-semibold text-gray-900 tracking-tight mb-3">
-          People / Education
-        </h1>
-        <p className="text-base text-gray-600 max-w-xl leading-relaxed">
-          Background in outdoor education, public health and working with
-          people. I have experience leading groups, facilitating learning, and
-          holding organisational responsibility.
-        </p>
+      <div className="mb-10 flex items-start justify-between gap-6">
+        <div>
+          <h1 className="text-3xl font-semibold text-gray-900 tracking-tight mb-3">
+            {txt.title}
+          </h1>
+          <p className="text-base text-gray-600 max-w-xl leading-relaxed">
+            {txt.intro}
+          </p>
+        </div>
+        <OutdoorScene className="w-32 shrink-0 text-gray-300 hidden sm:block" />
       </div>
 
       <div className="grid grid-cols-3 gap-3 mb-12">
@@ -53,26 +39,22 @@ export default function People() {
         ))}
       </div>
 
-      <Section title="Experience">
+      <Section title={txt.experienceTitle}>
         <div className="space-y-3">
-          {experience.map((item) => (
+          {txt.experience.map((item) => (
             <div key={item.role} className="flex items-baseline gap-3">
-              <span className="text-sm font-medium text-gray-900 min-w-44">
-                {item.role}
-              </span>
+              <span className="text-sm font-medium text-gray-900 min-w-44">{item.role}</span>
               <span className="text-sm text-gray-500">{item.note}</span>
             </div>
           ))}
         </div>
       </Section>
 
-      <Section title="Education">
+      <Section title={txt.educationTitle}>
         <div className="space-y-3">
-          {education.map((item) => (
+          {txt.education.map((item) => (
             <div key={item.title} className="flex items-baseline gap-3">
-              <span className="text-sm font-medium text-gray-900 min-w-44">
-                {item.title}
-              </span>
+              <span className="text-sm font-medium text-gray-900 min-w-44">{item.title}</span>
               {item.institution && (
                 <span className="text-sm text-gray-500">{item.institution}</span>
               )}
@@ -81,13 +63,10 @@ export default function People() {
         </div>
       </Section>
 
-      <Section title="Skills">
+      <Section title={txt.skillsTitle}>
         <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="text-sm px-3 py-1 border border-gray-200 rounded text-gray-700"
-            >
+          {txt.skills.map((skill) => (
+            <span key={skill} className="text-sm px-3 py-1 border border-gray-200 rounded text-gray-700">
               {skill}
             </span>
           ))}
