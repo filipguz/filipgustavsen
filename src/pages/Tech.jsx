@@ -43,8 +43,8 @@ export default function Tech() {
 
       <Section title={txt.linksTitle}>
         <div className="flex gap-6">
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-900 underline underline-offset-2">GitHub</a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-900 underline underline-offset-2">LinkedIn</a>
+          <a href="https://github.com/filipguz" className="text-sm text-gray-500 hover:text-gray-900 underline underline-offset-2">GitHub</a>
+          <a href="https://www.linkedin.com/in/filipgustavsen/" className="text-sm text-gray-500 hover:text-gray-900 underline underline-offset-2">LinkedIn</a>
         </div>
       </Section>
     </PageContainer>

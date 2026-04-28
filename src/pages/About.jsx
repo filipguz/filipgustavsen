@@ -1,4 +1,5 @@
 import PageContainer from '../components/PageContainer'
+import CompassRose from '../components/CompassRose'
 import { useLanguage } from '../context/LanguageContext'
 import { t } from '../translations'
 
@@ -9,9 +10,12 @@ export default function About() {
   return (
     <PageContainer>
       <div className="max-w-2xl">
-        <h1 className="text-3xl font-semibold text-gray-900 tracking-tight mb-10">
-          {txt.title}
-        </h1>
+        <div className="flex items-start justify-between gap-6 mb-10">
+          <h1 className="text-3xl font-semibold text-gray-900 tracking-tight">
+            {txt.title}
+          </h1>
+          <CompassRose className="w-24 shrink-0 text-gray-300 hidden sm:block" />
+        </div>
 
         <div className="space-y-5">
           {txt.paragraphs.map((p, i) => (
