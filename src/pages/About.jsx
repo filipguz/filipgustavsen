@@ -10,12 +10,9 @@ export default function About() {
   return (
     <PageContainer>
       <div className="max-w-2xl">
-        <div className="flex items-start justify-between gap-6 mb-10">
-          <h1 className="text-3xl font-semibold text-gray-900 tracking-tight">
-            {txt.title}
-          </h1>
-          <CompassRose className="w-24 shrink-0 text-gray-300 hidden sm:block" />
-        </div>
+        <h1 className="text-3xl font-semibold text-gray-900 tracking-tight mb-10">
+          {txt.title}
+        </h1>
 
         <div className="space-y-5">
           {txt.paragraphs.map((p, i) => (
@@ -25,13 +22,16 @@ export default function About() {
           ))}
         </div>
 
-        <div className="mt-12 border-l-2 border-gray-900 pl-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
-            {txt.goalLabel}
-          </p>
-          <p className="text-lg font-medium text-gray-900 leading-relaxed">
-            {txt.goal}
-          </p>
+        <div className="mt-12 flex items-center gap-8">
+          <div className="border-l-2 border-gray-900 pl-6 flex-1">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+              {txt.goalLabel}
+            </p>
+            <p className="text-lg font-medium text-gray-900 leading-relaxed">
+              {txt.goal}
+            </p>
+          </div>
+          <CompassRose className="w-28 shrink-0 text-gray-400 hidden sm:block" />
         </div>
       </div>
     </PageContainer>
