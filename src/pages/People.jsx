@@ -42,8 +42,8 @@ export default function People() {
       <Section title={txt.experienceTitle}>
         <div className="space-y-3">
           {txt.experience.map((item) => (
-            <div key={item.role} className="flex items-baseline gap-3">
-              <span className="text-sm font-medium text-gray-900 min-w-44">{item.role}</span>
+            <div key={item.role} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
+              <span className="text-sm font-medium text-gray-900 sm:min-w-44">{item.role}</span>
               <span className="text-sm text-gray-500">{item.note}</span>
             </div>
           ))}
@@ -53,8 +53,8 @@ export default function People() {
       <Section title={txt.educationTitle}>
         <div className="space-y-3">
           {txt.education.map((item) => (
-            <div key={item.title} className="flex items-baseline gap-3">
-              <span className="text-sm font-medium text-gray-900 min-w-44">{item.title}</span>
+            <div key={item.title} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
+              <span className="text-sm font-medium text-gray-900 sm:min-w-44">{item.title}</span>
               {item.institution && (
                 <span className="text-sm text-gray-500">{item.institution}</span>
               )}
