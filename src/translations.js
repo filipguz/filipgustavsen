@@ -36,8 +36,8 @@ export const t = {
         },
         {
           title: 'BuildOps',
-          description: 'Sanntidsdashboard for overvåking av ventilasjonsanlegg via Modbus TCP.',
-          tags: ['React', 'Spring Boot', 'Modbus TCP'],
+          description: 'Fullstack-plattform for drifts- og vedlikeholdsstyring av store bygg – stadioner, svømmehaller og kommunale bygg. Under utvikling.',
+          tags: ['React', 'Spring Boot', 'PostgreSQL'],
           links: [{ label: 'GitHub', href: 'https://github.com/filipguz/BuildOps' }],
         },
         {
@@ -112,8 +112,8 @@ export const t = {
         },
         {
           title: 'BuildOps',
-          description: 'Real-time dashboard for monitoring ventilation systems over Modbus TCP.',
-          tags: ['React', 'Spring Boot', 'Modbus TCP'],
+          description: 'A full-stack building operations and maintenance management platform designed for large facilities such as stadiums, swimming halls, and municipal buildings. In development.',
+          tags: ['React', 'Spring Boot', 'PostgreSQL'],
           links: [{ label: 'GitHub', href: 'https://github.com/filipguz/BuildOps' }],
         },
         {
