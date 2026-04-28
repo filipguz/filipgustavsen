@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Tech from './pages/Tech'
 import People from './pages/People'
+import About from './pages/About'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/tech" element={<Tech />} />
             <Route path="/people" element={<People />} />
+            <Route path="/om" element={<About />} />
           </Routes>
           <Footer />
         </div>

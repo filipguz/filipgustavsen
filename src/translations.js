@@ -1,10 +1,23 @@
 export const t = {
   no: {
-    nav: { home: 'Hjem', tech: 'Tech', people: 'Folk' },
+    nav: { home: 'Hjem', tech: 'Tech', people: 'Folk', about: 'Om meg' },
     home: {
       intro: 'Utvikler og friluftsinstruktør med erfaring fra både programvareutvikling og arbeid med mennesker.',
       techBtn: 'Teknologi / Utvikling',
       peopleBtn: 'Mennesker / Utdanning',
+    },
+    about: {
+      title: 'Om meg',
+      paragraphs: [
+        'Jeg heter Filip Gustavsen og har jobbet med nettsider og digitale løsninger siden 2007.',
+        'Jeg startet med webutvikling gjennom utdanning hos Noroff (2007–2009), hvor jeg fikk et solid grunnlag innen web, struktur og brukeropplevelse. Siden den gang har jeg jobbet praktisk med både nettsider og digitale løsninger, og de siste årene har jeg også utviklet komplette systemer og applikasjoner.',
+        'I dag bygger jeg moderne nettsider og løsninger for små og mellomstore bedrifter – med fokus på enkelhet, tydelig kommunikasjon og løsninger som faktisk fungerer i praksis.',
+        'Jeg har blant annet utviklet en fullverdig SaaS-løsning fra bunnen av med Java og Spring Boot, inkludert brukerhåndtering, betalingsløsninger og komplette arbeidsflyter. Denne erfaringen gjør at jeg ikke bare lager "fine nettsider", men systemer som fungerer teknisk og gir verdi over tid.',
+        'Ved siden av utvikling jobber jeg som leirskolelærer og instruktør. Dette har gitt meg sterk kompetanse innen kommunikasjon, struktur og samarbeid – noe som er avgjørende for å forstå kundens behov og levere gode løsninger.',
+        'Jeg har også utdanning innen folkehelse, med fokus på mennesker, relasjoner og brukerperspektiv. Det gjør at jeg alltid bygger løsninger med sluttbrukeren i sentrum.',
+      ],
+      goal: 'Å lage nettsider og løsninger som er enkle å bruke, ser profesjonelle ut og faktisk hjelper bedrifter å vokse.',
+      goalLabel: 'Mitt mål er enkelt',
     },
     tech: {
       title: 'Teknologi / Utvikling',
@@ -55,11 +68,24 @@ export const t = {
     footer: { email: 'E-post' },
   },
   en: {
-    nav: { home: 'Home', tech: 'Tech', people: 'People' },
+    nav: { home: 'Home', tech: 'Tech', people: 'People', about: 'About' },
     home: {
       intro: 'Developer and outdoor instructor with experience in both building software and working with people.',
       techBtn: 'Tech / Development',
       peopleBtn: 'People / Education',
+    },
+    about: {
+      title: 'About me',
+      paragraphs: [
+        'My name is Filip Gustavsen and I have worked with websites and digital solutions since 2007.',
+        'I started with web development through education at Noroff (2007–2009), where I built a solid foundation in web, structure and user experience. Since then I have worked hands-on with both websites and digital solutions, and in recent years I have also developed complete systems and applications.',
+        'Today I build modern websites and solutions for small and medium-sized businesses – with a focus on simplicity, clear communication and solutions that actually work in practice.',
+        'I have among other things developed a complete SaaS solution from scratch using Java and Spring Boot, including user management, payment solutions and complete workflows. This experience means I don\'t just create "nice websites", but systems that work technically and deliver value over time.',
+        'Alongside development I work as a school camp teacher and instructor. This has given me strong competence in communication, structure and collaboration – which is crucial for understanding client needs and delivering good solutions.',
+        'I also have an education in public health, with a focus on people, relationships and user perspective. This means I always build solutions with the end user at the centre.',
+      ],
+      goal: 'To create websites and solutions that are easy to use, look professional and actually help businesses grow.',
+      goalLabel: 'My goal is simple',
     },
     tech: {
       title: 'Tech / Development',
