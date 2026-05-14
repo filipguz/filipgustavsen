@@ -13,7 +13,6 @@ export const t = {
       paragraphs: [
         'Jeg heter Filip Gustavsen og har jobbet med nettsider og digitale løsninger siden 2007.',
         'Jeg startet med webutvikling gjennom utdanning hos Noroff (2007–2009), hvor jeg fikk et solid grunnlag innen web, struktur og brukeropplevelse. Siden den gang har jeg jobbet praktisk med både nettsider og digitale løsninger, og de siste årene har jeg også utviklet komplette systemer og applikasjoner.',
-        'I dag bygger jeg moderne nettsider og løsninger for små og mellomstore bedrifter – med fokus på enkelhet, tydelig kommunikasjon og løsninger som faktisk fungerer i praksis.',
         'Jeg har blant annet utviklet en fullverdig SaaS-løsning fra bunnen av med Java og Spring Boot, inkludert brukerhåndtering, betalingsløsninger og komplette arbeidsflyter. Denne erfaringen gjør at jeg ikke bare lager "fine nettsider", men systemer som fungerer teknisk og gir verdi over tid.',
         'Ved siden av utvikling jobber jeg som leirskolelærer og instruktør. Dette har gitt meg sterk kompetanse innen kommunikasjon, struktur og samarbeid – noe som er avgjørende for å forstå kundens behov og levere gode løsninger.',
         'Jeg har også utdanning innen folkehelse, med fokus på mennesker, relasjoner og brukerperspektiv. Det gjør at jeg alltid bygger løsninger med sluttbrukeren i sentrum.',
@@ -44,14 +43,9 @@ export const t = {
           title: 'Bygghjerne — AI Building Assistant',
           description: 'AI-basert system for byggforvaltning hvor brukere laster opp PDF-dokumenter og stiller spørsmål på norsk. PDF-opplasting, embeddings, vector search, RAG-arkitektur og AI-chat med kildehenvisninger.',
           tags: ['Next.js', 'FastAPI', 'Supabase', 'pgvector', 'Claude AI'],
-          links: [{ label: 'Live Demo', href: '#' }, { label: 'GitHub', href: '#' }],
+          links: [{ label: 'Live Demo', href: 'https://bygghjerne.no/' }, { label: 'GitHub', href: '#' }],
         },
-        {
-          title: 'Vizbo — PropTech Platform',
-          description: 'Konseptplattform for eiendomsutvikling med dashboard, interaktive kart, analysepaneler og 3D-visualisering med Three.js.',
-          tags: ['React', 'TypeScript', 'Express', 'Leaflet', 'Three.js'],
-          links: [{ label: 'Live Demo', href: '#' }, { label: 'GitHub', href: '#' }],
-        },
+     
         {
           title: 'Ventilation Dashboard',
           description: 'Sanntids overvåkning av ventilasjonssystem via Modbus TCP med REST API, React-dashboard og visualisering av driftsdata.',
@@ -95,7 +89,6 @@ export const t = {
       paragraphs: [
         'My name is Filip Gustavsen and I have worked with websites and digital solutions since 2007.',
         'I started with web development through education at Noroff (2007–2009), where I built a solid foundation in web, structure and user experience. Since then I have worked hands-on with both websites and digital solutions, and in recent years I have also developed complete systems and applications.',
-        'Today I build modern websites and solutions for small and medium-sized businesses – with a focus on simplicity, clear communication and solutions that actually work in practice.',
         'I have among other things developed a complete SaaS solution from scratch using Java and Spring Boot, including user management, payment solutions and complete workflows. This experience means I don\'t just create "nice websites", but systems that work technically and deliver value over time.',
         'Alongside development I work as a school camp teacher and instructor. This has given me strong competence in communication, structure and collaboration – which is crucial for understanding client needs and delivering good solutions.',
         'I also have an education in public health, with a focus on people, relationships and user perspective. This means I always build solutions with the end user at the centre.',
@@ -126,14 +119,9 @@ export const t = {
           title: 'Bygghjerne — AI Building Assistant',
           description: 'AI-powered building management system where users upload PDF documents and ask questions in Norwegian. Features PDF upload, embeddings, vector search, RAG architecture and AI chat with source references.',
           tags: ['Next.js', 'FastAPI', 'Supabase', 'pgvector', 'Claude AI'],
-          links: [{ label: 'Live Demo', href: '#' }, { label: 'GitHub', href: '#' }],
+          links: [{ label: 'Live Demo', href: 'https://bygghjerne.no/' }, { label: 'GitHub', href: '#' }],
         },
-        {
-          title: 'Vizbo — PropTech Platform',
-          description: 'PropTech concept platform for property development with a dashboard, interactive maps, analytics panels and 3D visualisation using Three.js.',
-          tags: ['React', 'TypeScript', 'Express', 'Leaflet', 'Three.js'],
-          links: [{ label: 'Live Demo', href: '#' }, { label: 'GitHub', href: '#' }],
-        },
+   
         {
           title: 'Ventilation Dashboard',
           description: 'Real-time monitoring of ventilation systems via Modbus TCP with a REST API, React dashboard and operational data visualisation.',
