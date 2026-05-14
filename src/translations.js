@@ -37,7 +37,7 @@ export const t = {
           title: 'Lønnskrav',
           description: 'Beslutningsstøtte for tillitsvalgte under lokale lønnsforhandlinger. Henter selskapsdata fra Brønnøysundregistrene og Regnskapsregisteret, analyserer opp mot tariffens fire kriterier og genererer redigerbare utkast til lønnskravbrev.',
           tags: ['Java 17', 'Spring Boot', 'React', 'TypeScript', 'PostgreSQL', 'Docker'],
-          links: [{ label: 'lonnskrav.no', href: 'https://lonnskrav.no' }, { label: 'GitHub', href: '#' }],
+          links: [{ label: 'lonnskrav.no', href: 'https://lonnskrav.no' }, { label: 'GitHub', href: 'https://github.com/filipguz/Bygghjerne' }],
         },
         {
           title: 'Bygghjerne — AI Building Assistant',
@@ -119,7 +119,7 @@ export const t = {
           title: 'Bygghjerne — AI Building Assistant',
           description: 'AI-powered building management system where users upload PDF documents and ask questions in Norwegian. Features PDF upload, embeddings, vector search, RAG architecture and AI chat with source references.',
           tags: ['Next.js', 'FastAPI', 'Supabase', 'pgvector', 'Claude AI'],
-          links: [{ label: 'Live Demo', href: 'https://bygghjerne.no/' }, { label: 'GitHub', href: '#' }],
+          links: [{ label: 'Live Demo', href: 'https://bygghjerne.no/' }, { label: 'GitHub', href: 'https://github.com/filipguz/Bygghjerne' }],
         },
    
         {
